@@ -1,0 +1,31 @@
+Results for ID3 Algorithm.
+Number of Training Instances: 10
+  Accuracy for Pruned tree: 0.0012861869313482218
+Accuracy for Unpruned tree: 0.0012861869313482218
+Number of Training Instances: 134
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 258
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 382
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 506
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 630
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 754
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 878
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 1002
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593
+Number of Training Instances: 1126
+  Accuracy for Pruned tree: 0.0025744350383910593
+Accuracy for Unpruned tree: 0.0025744350383910593

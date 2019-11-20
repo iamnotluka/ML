@@ -41,7 +41,8 @@ def ID3(instances, default):
             subtree = ID3(instances_i, mode_class(instances))
 
             subtree.instances_labeled = instances_i
-            subtree.parent_attribute = best_attributesubtree.parent_attribute_alue = best_attr_value_i
+            subtree.parent_attribute = best_attribute
+            subtree.parent_attribute_alue = best_attr_value_i
 
             tree.children[best_attr_value_i] = subtree
 
@@ -108,10 +109,10 @@ def gain_ratio(instances, attribute):
     information_gain = priorentropy - remaining_entropy
     split_information = -split_information
 
-    gaomratio = None
+    gainratio = None
 
     if split_information != 0:
-        gainrati = information_gain / split_information
+        gainratio = information_gain / split_information
     else:
         gainratio = -1000
 
@@ -143,7 +144,7 @@ def accuracy(trained_tree, test_instances):
         return no_of_correct_predictions / len(test_instances)
 
 def predict(node, test_instance):
-    if len(node.cildren == 0):
+    if len(node.children) == 0:
         return node.label
 
     else:
@@ -154,8 +155,8 @@ def predict(node, test_instance):
         else:
             instances = []
 
-            for attr_value in node.atribute_values:
-                instances += node.childrenp[attr_value].instances_labeled
+            for attr_value in node.attribute_values:
+                instances += node.children[attr_value].instances_labeled
             return mode_class(instances)
         
 TREE = None
@@ -177,7 +178,7 @@ def prune(node, val_instances):
         for value, child_node in node.children.items():
             prune_node(child_node, val_instances)
         
-        accuracy_before_pruning = accuracy(TREE< val_instances)
+        accuracy_before_pruning = accuracy(TREE, val_instances)
         node.pruned = True
 
         if accuracy_before_pruning >= accuracy(TREE, val_instances):
