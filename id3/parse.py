@@ -24,7 +24,3 @@ def parse(filename):
     return data
 
 data = parse('car.csv')
-
-import ffscv
-
-ffscv.get_five_folds(data)
